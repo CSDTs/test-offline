@@ -42,7 +42,7 @@ jobs:
           node-version: 14
       - name: install dependencies
         run: npm install
-     - name: publish
+      - name: publish
         uses: nick-fields/retry@v2.8.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
