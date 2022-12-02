@@ -47,6 +47,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          timeout_seconds: 30
+          timeout_minutes: 10
           max_attempts: 3
           command: npm run publish
